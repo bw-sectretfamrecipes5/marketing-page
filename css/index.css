@@ -97,6 +97,18 @@ nav a {
   display: flex;
   margin-bottom: 1%;
 }
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 1em;
+  box-sizing: border-box;
+  color: white;
+  background: url(../assets/light-steak-salad.jpg) center center no-repeat;
+  background-size: cover;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
