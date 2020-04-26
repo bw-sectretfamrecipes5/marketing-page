@@ -1,0 +1,225 @@
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+p {
+  line-height: 1.5rem;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  text-decoration: none;
+  color: white;
+  font-size: 4.5vh;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+nav {
+  display: flex;
+  min-width: 60%;
+  justify-content: space-between;
+}
+nav a {
+  font-size: 1.5rem;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 0% 3%;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 1em;
+  box-sizing: border-box;
+  color: white;
+  background: url(../assets/dark-bread-right-side.jpg) center center no-repeat;
+  background-size: cover;
+}
+.hero-title {
+  font-family: "Open Sans", sans-serif;
+  max-width: 100%;
+  margin: 0;
+  font-size: 9vh;
+  font-weight: bold;
+  line-height: 0.9;
+}
+@media only screen and (min-width: 32em) {
+  .hero-title {
+    font-size: 16vh;
+  }
+}
+.hero-footer {
+  display: flex;
+  margin-bottom: 1em;
+}
+.button {
+  padding: 0.5em 0.67em;
+  color: white;
+  text-decoration: none;
+  border: 0.1em solid white;
+}
+.button-primary {
+  color: black;
+  background-color: white;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
