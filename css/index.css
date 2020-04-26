@@ -60,35 +60,42 @@ nav a {
   padding: 1em;
   box-sizing: border-box;
   color: white;
-  background: url(../assets/dark-bread-right-side.jpg) center center no-repeat;
+  background: url(../assets/dark-burger-with-knife.jpg) center center no-repeat;
   background-size: cover;
 }
 .hero-title {
   font-family: "Open Sans", sans-serif;
   max-width: 100%;
-  margin: 1%;
-  font-size: 15vh;
+  margin: 0 4%;
+  margin-top: 7%;
+  font-size: 9rem;
   font-weight: bold;
   line-height: 0.9;
 }
+.cta {
+  display: flex;
+  margin: 3% 8%;
+  margin-top: 4%;
+}
+.cta .buttons {
+  padding: 18px 48px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: transparent;
+  transition: ease 0.3s;
+  font-size: 1.6rem;
+  border: 3px solid white;
+  border-radius: 12px;
+}
+.cta .buttons:hover:hover {
+  background-color: white;
+  color: black;
+}
 .hero-footer {
   display: flex;
-  margin-bottom: 1em;
-}
-.button {
-  padding: 0.5em 0.67em;
-  color: white;
-  text-decoration: none;
-  border: 0.1em solid white;
-}
-.button-primary {
-  color: black;
-  background-color: white;
-}
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-bottom: 1%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
