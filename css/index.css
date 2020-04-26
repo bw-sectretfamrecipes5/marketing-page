@@ -66,15 +66,10 @@ nav a {
 .hero-title {
   font-family: "Open Sans", sans-serif;
   max-width: 100%;
-  margin: 0;
-  font-size: 9vh;
+  margin: 1%;
+  font-size: 15vh;
   font-weight: bold;
   line-height: 0.9;
-}
-@media only screen and (min-width: 32em) {
-  .hero-title {
-    font-size: 16vh;
-  }
 }
 .hero-footer {
   display: flex;
