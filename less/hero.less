@@ -28,6 +28,23 @@ nav a {
   padding: 0% 3%;
 }
 
+.logButton {
+  padding: 8px 18px;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: @mainFont;
+  color: #e20074;
+  background-color: transparent;
+  border: 1px solid #e20074;
+  transition: ease-in-out 0.3s;
+  border-radius: 12px;
+
+  &:hover {
+    .hoverEasePink();
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -39,12 +56,6 @@ nav a {
   background: url(../assets/dark-burger-with-knife.jpg) center center no-repeat;
   background-size: cover;
 } // this closes hero
-
-// .overlay {
-//   background-color: black;
-//   opacity: 0.9;
-//   height: 100vh;
-// }
 
 .hero-title {
   font-family: @heading-font;
@@ -66,6 +77,8 @@ nav a {
   display: flex;
   margin: 3% 8%;
   margin-top: 4%;
+  // transition: 0.5s;
+  transition: ease-in-out 0.5s;
   //   justify-content: center;
 
   .buttons {
@@ -75,7 +88,7 @@ nav a {
     font-family: @mainFont;
     color: white;
     background-color: transparent;
-    transition: ease 0.3s;
+    transition: ease-in-out 0.3s;
     font-size: 1.6rem;
     border: 3px solid white;
     border-radius: 12px;
