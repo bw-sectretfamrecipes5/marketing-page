@@ -28,6 +28,20 @@ p {
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Homemade Apple';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Homemade Apple Regular'), local('HomemadeApple-Regular'), url(https://fonts.gstatic.com/s/homemadeapple/v10/Qw3EZQFXECDrI2q789EKQZJob3x9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
 #header {
   display: flex;
   justify-content: space-between;
@@ -42,15 +56,17 @@ p {
 }
 nav {
   display: flex;
-  min-width: 60%;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 nav a {
   font-size: 1.5rem;
-  text-align: right;
   font-family: "Roboto", sans-serif;
   color: white;
+  margin: auto;
   padding: 0% 3%;
+  justify-content: flex-end;
 }
 .logButton {
   padding: 8px 18px;
@@ -63,6 +79,8 @@ nav a {
   border: 1px solid #e20074;
   transition: ease-in-out 0.3s;
   border-radius: 12px;
+  margin-left: 90%;
+  margin-top: 2%;
 }
 .logButton:hover:hover {
   background-color: #e20074;
@@ -74,7 +92,7 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  padding: 1em;
+  padding-bottom: 10%;
   box-sizing: border-box;
   color: white;
   background: url(../assets/dark-burger-with-knife.jpg) center center no-repeat;
@@ -84,16 +102,28 @@ nav a {
   font-family: "Open Sans", sans-serif;
   max-width: 100%;
   margin: 0 4%;
-  margin-top: 7%;
+  margin-top: 9%;
   font-size: 9rem;
   font-weight: bold;
   line-height: 0.9;
 }
+.hero-sub {
+  font-family: "Homemade Apple", cursive;
+  letter-spacing: 2px;
+  max-width: 100%;
+  margin: 0 4%;
+  margin-left: 11%;
+  margin-top: 7%;
+  font-size: 3rem;
+  line-height: 0.5;
+  font-weight: lighter;
+}
 .cta {
   display: flex;
   margin: 3% 8%;
-  margin-top: 4%;
+  margin-top: 8%;
   transition: ease-in-out 0.5s;
+  justify-content: center;
 }
 .cta .buttons {
   padding: 18px 48px;
@@ -114,6 +144,48 @@ nav a {
 .hero-footer {
   display: flex;
   margin-bottom: 1%;
+}
+.spices {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../assets/light-spices.jpg");
+}
+.spices .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.spices .overlay h1 {
+  font-family: "Homemade Apple", cursive;
+  max-width: 100%;
+  margin: 0 5%;
+  margin-top: 9%;
+  font-size: 4.5rem;
+  line-height: 0.9;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.spices .overlay p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 0.9;
+  color: white;
+  text-align: center;
+  margin: 0 20%;
+  padding: 20px;
+  margin-bottom: 53px;
+  padding-bottom: 135px;
 }
 .main {
   background-color: white;
