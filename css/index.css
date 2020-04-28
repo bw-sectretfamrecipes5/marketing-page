@@ -68,25 +68,6 @@ nav a {
   padding: 0% 3%;
   justify-content: flex-end;
 }
-.logButton {
-  padding: 8px 18px;
-  text-align: center;
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: #e20074;
-  background-color: transparent;
-  border: 1px solid #e20074;
-  transition: ease-in-out 0.3s;
-  border-radius: 12px;
-  margin-left: 90%;
-  margin-top: 2%;
-}
-.logButton:hover:hover {
-  background-color: #e20074;
-  color: white;
-  border: 1px solid #e20074;
-}
 .hero {
   display: flex;
   flex-direction: column;
@@ -197,6 +178,17 @@ nav a {
   box-sizing: border-box;
   color: white;
   background: url(../assets/dark-steamed-crab.jpg) center center no-repeat;
+  background-size: cover;
+}
+.white-space {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh;
+  padding: 1em;
+  box-sizing: border-box;
+  color: white;
   background-size: cover;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -326,4 +318,52 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+.stickyNav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 1rem 0rem 1rem 0rem;
+  margin: 0rem;
+}
+.stickyNav .navContainer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.stickyNav .navContainer .newNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0rem;
+  margin: 0rem 0rem 0rem 5rem;
+  border-width: 1px;
+  border-radius: 0px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+  font-size: 1.6rem;
+  border-radius: 12px;
+}
+.stickyNav .navContainer .newNav a {
+  padding: 10px 18px;
+  font-size: 1.3rem;
+  margin: 0.5rem 5rem 0.5rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+.stickyNav .navContainer .newNav a:hover:hover {
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+  border: 1px solid white;
+  border-radius: 12px;
 }
