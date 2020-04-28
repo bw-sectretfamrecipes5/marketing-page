@@ -419,3 +419,22 @@ table {
   border-radius: 50%;
   width: 100%;
 }
+.teammate1-container .teammate1-social-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.teammate1-container .teammate1-social-container .teammate1-social-icons-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.teammate1-container .teammate1-social-container .teammate1-social-icons-container img .github {
+  border-radius: 50%;
+  width: 100%;
+}

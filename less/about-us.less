@@ -50,9 +50,34 @@
     img {
       border-radius: 50%;
       width: 100%;
-      //   justify-content: center;
-      //   align-content: center;
-      //   align-items: center;
-    }
+    } // this closes img
   } // this closes .teammate1-photo-container
+
+  .teammate1-social-container {
+    // display: flex;
+    // width: 15%;
+    // margin: 0 0 0 5%;
+    // flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    // width: 80%;
+    width: 100%;
+    // height: 270px;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 5%;
+
+    .teammate1-social-icons-container {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+
+      img .github {
+        border-radius: 50%;
+        width: 100%;
+      }
+    } // this closes teammate1-social-icons
+  } // this closes teammate1-social-container
 } // this closes teammate1-container
