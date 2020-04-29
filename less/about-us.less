@@ -13,6 +13,15 @@
   background-size: cover;
   background-position: 50% 50%;
   background-image: url(../assets/about-us-cutting-board.jpg);
+
+  @media (max-width: 515px) {
+    height: auto;
+    width: 100vw;
+    // position: relative;
+    // background-size: cover;
+    // background-position: 50% 50%;
+    background-image: url(../assets/cutting-board-filtered.png);
+  } // this closes the media query for .about
 } // closes about
 
 .our-team-container {
@@ -27,7 +36,24 @@
     font-family: @decorFont;
     font-size: 5.5rem;
     margin-top: 5%;
-  }
+
+    @media (max-width: 515px) {
+      color: white;
+      margin-top: 5%;
+      font-size: 2.7rem;
+      margin-bottom: 3%;
+    }
+  } // this closes .our-team-wording
+
+  @media (max-width: 515px) {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9%;
+    padding-top: 5%;
+  } // this closes the media query for .our-team-container
 } // closes our-team-container
 
 // .teamSpacing {
@@ -77,6 +103,10 @@
       font-family: @heading-font;
       font-size: 2rem;
       line-height: 0.9;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     } // this closes h3 for teammate2
 
     h5 {
@@ -87,6 +117,12 @@
       font-size: 2.4rem;
       line-height: 0.9;
       letter-spacing: 5px;
+
+      @media (max-width: 515px) {
+        color: white;
+        margin: 3% 0;
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
@@ -97,6 +133,10 @@
       font-size: 1.3rem;
       line-height: 0.9;
       color: #5c5c5c;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     }
 
     .teammate1-social-container {
@@ -134,7 +174,21 @@
         background-color: white;
         margin: 0 auto;
       } // this closes .email for .teammate1-social-container
+
+      @media (max-width: 515px) {
+        margin: 3% 0;
+      }
     } // this closes .teammate1-social-container
+
+    @media (max-width: 515px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      align-self: center;
+      margin-bottom: 8%;
+      border-bottom: 1px solid snow;
+    } // this closes @media for .teammate1-container
   } // this closes teammate1-container
 
   .teammate2-container {
@@ -171,6 +225,10 @@
       font-family: @heading-font;
       font-size: 2rem;
       line-height: 0.9;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     } // this closes h3 for teammate2
 
     h5 {
@@ -181,6 +239,12 @@
       font-size: 2.4rem;
       line-height: 0.9;
       letter-spacing: 5px;
+
+      @media (max-width: 515px) {
+        color: white;
+        margin: 3% 0;
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
@@ -191,6 +255,10 @@
       font-size: 1.3rem;
       line-height: 0.9;
       color: #5c5c5c;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     }
 
     .teammate2-social-container {
@@ -228,7 +296,19 @@
         background-color: white;
         margin: 0 auto;
       } // this closes .email for .teammate2-social-container
+      @media (max-width: 515px) {
+        margin: 3% 0;
+      }
     } // this closes .teammate2-social-container
+    @media (max-width: 515px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      align-self: center;
+      margin-bottom: 8%;
+      border-bottom: 1px solid snow;
+    } // this closes @media for .teammate2-container
   } // this closes .teammate2-container
 
   .teammate3-container {
@@ -265,6 +345,10 @@
       font-family: @heading-font;
       font-size: 2rem;
       line-height: 0.9;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     } // this closes h3 for teammate2
 
     h5 {
@@ -275,6 +359,12 @@
       font-size: 2.4rem;
       line-height: 0.9;
       letter-spacing: 5px;
+
+      @media (max-width: 515px) {
+        color: white;
+        margin: 3% 0;
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
@@ -285,6 +375,10 @@
       font-size: 1.3rem;
       line-height: 0.9;
       color: #5c5c5c;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     }
 
     .teammate3-social-container {
@@ -322,7 +416,19 @@
         background-color: white;
         margin: 0 auto;
       } // this closes .email for .teammate3-social-container
+      @media (max-width: 515px) {
+        margin: 3% 0;
+      }
     } // this closes .teammate3-social-container
+    @media (max-width: 515px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      align-self: center;
+      margin-bottom: 5%;
+      border-bottom: 1px solid snow;
+    } // this closes @media for .teammate3-container
   } // this closes .teammate3-container
 
   .teammate4-container {
@@ -359,6 +465,10 @@
       font-family: @heading-font;
       font-size: 2rem;
       line-height: 0.9;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     } // this closes h3 for teammate2
 
     h5 {
@@ -369,6 +479,12 @@
       font-size: 2.4rem;
       line-height: 0.9;
       letter-spacing: 5px;
+
+      @media (max-width: 515px) {
+        color: white;
+        margin: 3% 0;
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
@@ -379,6 +495,10 @@
       font-size: 1.3rem;
       line-height: 0.9;
       color: #5c5c5c;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     }
 
     .teammate4-social-container {
@@ -416,8 +536,26 @@
         background-color: white;
         margin: 0 auto;
       } // this closes .email for .teammate4-social-container
+      @media (max-width: 515px) {
+        margin: 3% 0;
+      }
     } // this closes .teammate4-social-container
+    @media (max-width: 515px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      align-self: center;
+      margin-bottom: 5%;
+      border-bottom: 1px solid snow;
+    } // this closes @media for .teammate4-container
   } // this closes .teammate4-container
+
+  @media (max-width: 515px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } // this closes @media for .overall-team-container
 } // this closes .overall-team-container
 
 //Chelsea Wetzel
@@ -464,6 +602,10 @@
       font-family: @heading-font;
       font-size: 2rem;
       line-height: 0.9;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     } // this closes h3 for teammate2
 
     h5 {
@@ -474,6 +616,12 @@
       font-size: 2.4rem;
       line-height: 0.9;
       letter-spacing: 5px;
+
+      @media (max-width: 515px) {
+        color: white;
+        margin: 3% 0;
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
@@ -484,6 +632,10 @@
       font-size: 1.3rem;
       line-height: 0.9;
       color: #5c5c5c;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     }
 
     .teammate6-social-container {
@@ -521,7 +673,19 @@
         background-color: white;
         margin: 0 auto;
       } // this closes .email for .teammate6-social-container
+      @media (max-width: 515px) {
+        margin: 3% 0;
+      }
     } // this closes .teammate6-social-container
+    @media (max-width: 515px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      align-self: center;
+      margin-bottom: 8%;
+      border-bottom: 1px solid snow;
+    } // this closes @media for .teammate6-container
   } // this closes teammate6-container
 
   .teammate7-container {
@@ -558,6 +722,10 @@
       font-family: @heading-font;
       font-size: 2rem;
       line-height: 0.9;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     } // this closes h3 for teammate2
 
     h5 {
@@ -568,6 +736,12 @@
       font-size: 2.4rem;
       line-height: 0.9;
       letter-spacing: 5px;
+
+      @media (max-width: 515px) {
+        color: white;
+        margin: 3% 0;
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
@@ -578,6 +752,10 @@
       font-size: 1.3rem;
       line-height: 0.9;
       color: #5c5c5c;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     }
 
     .teammate7-social-container {
@@ -615,7 +793,19 @@
         background-color: white;
         margin: 0 auto;
       } // this closes .email for .teammate7-social-container
+      @media (max-width: 515px) {
+        margin: 3% 0;
+      }
     } // this closes .teammate7-social-container
+    @media (max-width: 515px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      align-self: center;
+      margin-bottom: 8%;
+      border-bottom: 1px solid snow;
+    } // this closes @media for .teammate7-container
   } // this closes teammate7-container
 
   .teammate5-container {
@@ -652,6 +842,10 @@
       font-family: @heading-font;
       font-size: 2rem;
       line-height: 0.9;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     } // this closes h3 for teammate2
 
     h5 {
@@ -662,6 +856,12 @@
       font-size: 2.4rem;
       line-height: 0.9;
       letter-spacing: 5px;
+
+      @media (max-width: 515px) {
+        color: white;
+        margin: 3% 0;
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
@@ -672,6 +872,10 @@
       font-size: 1.3rem;
       line-height: 0.9;
       color: #5c5c5c;
+
+      @media (max-width: 515px) {
+        color: white;
+      }
     }
 
     .teammate5-social-container {
@@ -709,6 +913,23 @@
         background-color: white;
         margin: 0 auto;
       } // this closes .email for .teammate5-social-container
+      @media (max-width: 515px) {
+        margin: 3% 0;
+      }
     } // this closes .teammate5-social-container
+    @media (max-width: 515px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      align-self: center;
+      margin-bottom: 8%;
+      border-bottom: 1px solid snow;
+    } // this closes @media for .teammate5-container
   } // this closes teammate5-container
-} // closes .new container
+  @media (max-width: 515px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } // this closes @media for .new-container
+} // closes .new-container
