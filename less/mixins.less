@@ -45,3 +45,24 @@
   font-size: 1.8rem;
   color: black;
 }
+
+.rotate () {
+  &:hover {
+    transition: ease-in-out 0.7s;
+    transform: rotate(360deg);
+  }
+}
+
+.grow () {
+  &:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.7s;
+  }
+}
+
+.shift () {
+  &:hover {
+    transform: rotateZ(-30deg);
+    transition: ease-in-out 0.7s;
+  }
+}
