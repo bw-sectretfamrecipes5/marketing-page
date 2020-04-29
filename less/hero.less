@@ -58,6 +58,12 @@ nav a {
   color: white;
   background: url(../assets/dark-burger-with-knife.jpg) center center no-repeat;
   background-size: cover;
+
+  @media (max-width: 515px) {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+  }
 } // this closes hero
 
 .hero-title {
@@ -68,6 +74,15 @@ nav a {
   font-size: 9rem;
   font-weight: bold;
   line-height: 0.9;
+
+  @media (max-width: 515px) {
+    font-family: @heading-font;
+    max-width: 100%;
+    margin: 0 4%;
+    margin-top: 9%;
+    font-size: 4rem;
+    font-weight: bold;
+  }
 }
 
 .hero-sub {
@@ -80,6 +95,18 @@ nav a {
   font-size: 3rem;
   line-height: 0.5;
   font-weight: lighter;
+
+  @media (max-width: 515px) {
+    font-family: @decorFont;
+    letter-spacing: 7px;
+    max-width: 100%;
+    margin: 0 4%;
+    margin-left: 11%;
+    margin-top: 7%;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-weight: lighter;
+  }
 }
 
 // @media only screen and (min-width: 960px) {
@@ -111,7 +138,28 @@ nav a {
     &:hover {
       .hoverEase();
     }
-  } // this closes buttons
+    @media (max-width: 515px) {
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      font-family: @mainFont;
+      color: white;
+      background-color: transparent;
+      transition: ease-in-out 0.3s;
+      font-size: 1.6rem;
+      border: 3px solid white;
+      border-radius: 12px;
+
+      &:hover {
+        .hoverEase();
+      }
+    } // @media for .buttons
+  } // this closes .buttons
+  @media (max-width: 515px) {
+    display: flex;
+    margin: 3% 8%;
+    margin-top: 8%;
+  } // @media for cta
 } // this closes cta
 
 .hero-footer {

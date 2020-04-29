@@ -79,6 +79,13 @@ nav a {
   background: url(../assets/dark-burger-with-knife.jpg) center center no-repeat;
   background-size: cover;
 }
+@media (max-width: 515px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+  }
+}
 .hero-title {
   font-family: "Open Sans", sans-serif;
   max-width: 100%;
@@ -87,6 +94,16 @@ nav a {
   font-size: 9rem;
   font-weight: bold;
   line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .hero-title {
+    font-family: "Open Sans", sans-serif;
+    max-width: 100%;
+    margin: 0 4%;
+    margin-top: 9%;
+    font-size: 4rem;
+    font-weight: bold;
+  }
 }
 .hero-sub {
   font-family: "Homemade Apple", cursive;
@@ -98,6 +115,19 @@ nav a {
   font-size: 3rem;
   line-height: 0.5;
   font-weight: lighter;
+}
+@media (max-width: 515px) {
+  .hero-sub {
+    font-family: "Homemade Apple", cursive;
+    letter-spacing: 7px;
+    max-width: 100%;
+    margin: 0 4%;
+    margin-left: 11%;
+    margin-top: 7%;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-weight: lighter;
+  }
 }
 .cta {
   display: flex;
@@ -121,6 +151,31 @@ nav a {
 .cta .buttons:hover:hover {
   background-color: white;
   color: black;
+}
+@media (max-width: 515px) {
+  .cta .buttons {
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    font-size: 1.6rem;
+    border: 3px solid white;
+    border-radius: 12px;
+  }
+  .cta .buttons:hover:hover {
+    background-color: white;
+    color: black;
+  }
+}
+@media (max-width: 515px) {
+  .cta {
+    display: flex;
+    margin: 3% 8%;
+    margin-top: 8%;
+  }
 }
 .hero-footer {
   display: flex;
@@ -187,6 +242,14 @@ nav a {
   text-align: center;
   padding-bottom: 60px;
 }
+@media (max-width: 515px) {
+  .white-space h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
 .white-space p {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
@@ -198,6 +261,20 @@ nav a {
   padding: 20px;
   margin-bottom: 53px;
   padding-bottom: 135px;
+}
+@media (max-width: 515px) {
+  .white-space p {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 515px) {
+  .white-space {
+    height: 100vh;
+    width: 100vw;
+  }
 }
 .infoBreakdown {
   height: 100vh;
@@ -333,7 +410,7 @@ table {
 }
 .stickyNav {
   width: 100%;
-  position: fixed;
+  position: static;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -395,8 +472,9 @@ table {
 @media (max-width: 515px) {
   .stickyNav .navContainer .newNav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
+    text-align: center;
   }
 }
 @media (max-width: 515px) {
@@ -410,9 +488,10 @@ table {
   .stickyNav {
     width: 100%;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0);
     justify-content: center;
     align-items: center;
+    position: static;
   }
 }
 .about {

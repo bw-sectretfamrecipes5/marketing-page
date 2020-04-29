@@ -72,6 +72,13 @@
     line-height: 0.9;
     text-align: center;
     padding-bottom: 60px;
+
+    @media (max-width: 515px) {
+      font-size: 2.5rem;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+    }
   } // this closes h1
 
   p {
@@ -85,7 +92,19 @@
     padding: 20px;
     margin-bottom: 53px;
     padding-bottom: 135px;
+
+    @media (max-width: 515px) {
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+      line-height: 1.6;
+      margin: 0 auto;
+    }
   } // this closes p
+
+  @media (max-width: 515px) {
+    height: 100vh;
+    width: 100vw;
+  } // @media for .white-space
 } // this closes white-space
 
 .infoBreakdown {

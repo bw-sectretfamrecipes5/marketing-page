@@ -2,7 +2,7 @@
 
 .stickyNav {
   width: 100%;
-  position: fixed;
+  position: static;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -61,8 +61,9 @@
       } // this closes <a>
       @media (max-width: 515px) {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
+        text-align: center;
       } // this closes @media for .newNav
     } // this closes .newNav
     @media (max-width: 515px) {
@@ -75,8 +76,9 @@
   @media (max-width: 515px) {
     width: 100%;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0);
     justify-content: center;
     align-items: center;
+    position: static;
   } // this closes @media for .stickyNav
 } // this closses .stickyNav
