@@ -397,44 +397,209 @@ table {
 .our-team-container .our-team-wording {
   font-family: "Homemade Apple", cursive;
   font-size: 5.5rem;
-  margin-top: 8%;
+  margin-top: 5%;
 }
-.teammate1-container {
+.teamSpacing {
+  margin: 6% 0 0 0;
+}
+.overall-team-container {
   display: flex;
-  margin: 0 0 0 5%;
-  flex-direction: column;
-  width: 15%;
-}
-.teammate1-container .teammate1-photo-container {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid white;
-  padding: 5%;
-}
-.teammate1-container .teammate1-photo-container img {
-  border-radius: 50%;
-  width: 100%;
-}
-.teammate1-container .teammate1-social-container {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid white;
-  padding: 5%;
-}
-.teammate1-container .teammate1-social-container .teammate1-social-icons-container {
   flex-direction: row;
   width: 100%;
-  justify-content: center;
+  justify-content: space-around;
 }
-.teammate1-container .teammate1-social-container .teammate1-social-icons-container img .github {
+.overall-team-container .teammate1-container {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+}
+.overall-team-container .teammate1-container .teammate1-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.overall-team-container .teammate1-container .teammate1-photo-container img {
   border-radius: 50%;
   width: 100%;
+}
+.overall-team-container .teammate1-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+  line-height: 0.9;
+}
+.overall-team-container .teammate1-container .teamSpacing {
+  padding: 3% 0 0 0;
+}
+.overall-team-container .teammate1-container .teammate1-social-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5%;
+}
+.overall-team-container .teammate1-container .teammate1-social-container .teammate1-social-icons-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.overall-team-container .teammate1-container .teammate1-social-container .teammate1-social-icons-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+}
+.overall-team-container .teammate1-container .teammate1-social-container .teammate1-social-icons-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 10px;
+}
+.overall-team-container .teammate1-container .teammate1-social-container .teammate1-social-icons-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+}
+.overall-team-container .teammate2-container {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+}
+.overall-team-container .teammate2-container .teammate2-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.overall-team-container .teammate2-container .teammate2-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+}
+.overall-team-container .teammate2-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+  line-height: 0.9;
+}
+.overall-team-container .teammate2-container .teamSpacing {
+  padding: 3% 0 0 0;
+}
+.overall-team-container .teammate2-container .teammate2-social-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5%;
+}
+.overall-team-container .teammate2-container .teammate2-social-container .teammate2-social-icons-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.overall-team-container .teammate2-container .teammate2-social-container .teammate2-social-icons-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+}
+.overall-team-container .teammate2-container .teammate2-social-container .teammate2-social-icons-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 10px;
+}
+.overall-team-container .teammate2-container .teammate2-social-container .teammate2-social-icons-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+}
+.overall-team-container .teammate3-container {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+}
+.overall-team-container .teammate3-container .teammate3-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.overall-team-container .teammate3-container .teammate3-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+}
+.overall-team-container .teammate3-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+  line-height: 0.9;
+}
+.overall-team-container .teammate3-container .teamSpacing {
+  padding: 3% 0 0 0;
+}
+.overall-team-container .teammate3-container .teammate3-social-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5%;
+}
+.overall-team-container .teammate3-container .teammate3-social-container .teammate3-social-icons-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.overall-team-container .teammate3-container .teammate3-social-container .teammate3-social-icons-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+}
+.overall-team-container .teammate3-container .teammate3-social-container .teammate3-social-icons-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 10px;
+}
+.overall-team-container .teammate3-container .teammate3-social-container .teammate3-social-icons-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
 }
