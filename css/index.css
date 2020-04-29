@@ -1247,3 +1247,62 @@ table {
     justify-content: center;
   }
 }
+.footer {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+}
+.footer .made-with-love-1 {
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.footer .made-with-love-1 h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+  letter-spacing: 2px;
+}
+@media (max-width: 515px) {
+  .footer .made-with-love-1 h6 {
+    color: white;
+    margin: 3% 0;
+    font-size: 0.9rem;
+  }
+}
+.footer .made-with-love-1 .heart-container {
+  width: 90px;
+  height: 90px;
+}
+.footer .made-with-love-1 .heart-container img {
+  width: 100%;
+}
+@media (max-width: 515px) {
+  .footer .made-with-love-1 .heart-container img {
+    width: 100%;
+  }
+}
+@media (max-width: 515px) {
+  .footer .made-with-love-1 .heart-container {
+    width: 25px;
+    height: 25px;
+    margin: 0 1%;
+  }
+}
+@media (max-width: 515px) {
+  .footer .made-with-love-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media (max-width: 515px) {
+  .footer {
+    display: flex;
+    height: 125px;
+    justify-content: center;
+  }
+}
