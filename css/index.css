@@ -379,6 +379,42 @@ table {
   border: 1px solid white;
   border-radius: 12px;
 }
+@media (max-width: 515px) {
+  .stickyNav .navContainer .newNav a:hover:hover:hover {
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    border: 1px solid white;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 515px) {
+  .stickyNav .navContainer .newNav a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 515px) {
+  .stickyNav .navContainer .newNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 515px) {
+  .stickyNav .navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 515px) {
+  .stickyNav {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+  }
+}
 .about {
   height: 100vh;
   width: 100vw;

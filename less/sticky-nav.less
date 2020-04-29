@@ -11,10 +11,6 @@
   background-color: rgba(0, 0, 0, 0.55);
   padding: 1rem 0rem 1rem 0rem;
   margin: 0rem;
-  //   border-color: rgba(0, 0, 0, 0.9);
-  //   border-style: none none solid none;
-  //   border-width: 1px;
-  //   border-radius: 0px;
 
   .navContainer {
     margin: 0;
@@ -52,8 +48,35 @@
 
         &:hover {
           .navHover();
+
+          @media (max-width: 515px) {
+            &:hover {
+              .navHover();
+            }
+          } // this closes @media for &:hover
         }
+        @media (max-width: 515px) {
+          font-size: 0.8rem;
+        } // this closes @media for <a>
       } // this closes <a>
+      @media (max-width: 515px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      } // this closes @media for .newNav
     } // this closes .newNav
+    @media (max-width: 515px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } // this closes @media for .navContainer
   } // this closes .navContainer
+
+  @media (max-width: 515px) {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+  } // this closes @media for .stickyNav
 } // this closses .stickyNav
