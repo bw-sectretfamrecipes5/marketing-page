@@ -213,7 +213,7 @@
         width: 100%;
 
         &:hover {
-          .rotate(); // .rotate() or .grow() so far
+          .grow(); // .rotate() or .grow() so far
         }
       } // this closes img
     } // this closes .teammate2-photo-container
@@ -263,7 +263,7 @@
 
     .teammate2-social-container {
       flex-direction: row;
-      width: 100%;
+      width: 85%;
       justify-content: center;
       margin: 0 auto;
       padding: 5%;
@@ -333,7 +333,7 @@
         width: 100%;
 
         &:hover {
-          .shift(); // .rotate() or .grow() or .shift() so far
+          .grow(); // .rotate() or .grow() so far
         }
       } // this closes img
     } // this closes .teammate3-photo-container
@@ -453,7 +453,7 @@
         width: 100%;
 
         &:hover {
-          .shift(); // .rotate() or .grow() or .shift() so far
+          .grow(); // .rotate() or .grow() or .shift() so far
         }
       } // this closes img
     } // this closes .teammate4-photo-container
@@ -933,61 +933,3 @@
     justify-content: center;
   } // this closes @media for .new-container
 } // closes .new-container
-
-.footer {
-  display: flex;
-  height: 300px;
-  width: 100%;
-  background-color: black;
-  justify-content: center;
-
-  .made-with-love-1 {
-    // padding-top: 1%;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-
-    h6 {
-      font-family: @heading-font;
-      font-size: 2rem;
-      line-height: 0.9;
-      letter-spacing: 2px;
-
-      @media (max-width: 515px) {
-        color: white;
-        margin: 3% 0;
-        font-size: 0.9rem;
-      } // this closes @media for h6
-    }
-    .heart-container {
-      width: 90px;
-      height: 90px;
-
-      img {
-        width: 100%;
-
-        @media (max-width: 515px) {
-          width: 100%;
-        } // this closes @media img
-      } // this closes .img
-
-      @media (max-width: 515px) {
-        width: 25px;
-        height: 25px;
-        margin: 0 1%;
-      } // this closes @media for heart container
-    } // this closes .heart-container
-    @media (max-width: 515px) {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-    }
-  } // this closes .made-with-love
-
-  @media (max-width: 515px) {
-    display: flex;
-    height: 125px;
-    justify-content: center;
-  } // this closes @ media for footer
-} // this closes .footer

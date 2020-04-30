@@ -1,3 +1,42 @@
+.new-footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+.new-footer .made-with-love-1 {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+.new-footer .made-with-love-1 h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 0.9;
+  letter-spacing: 2px;
+}
+@media (max-width: 515px) {
+  .new-footer .made-with-love-1 h6 {
+    color: white;
+    margin: 3% 0;
+    font-size: 0.9rem;
+  }
+}
+.new-footer .made-with-love-1 .heart-container {
+  height: 25px;
+  width: 25px;
+  margin: 0 10px;
+}
+.new-footer .made-with-love-1 .heart-container img {
+  width: 100%;
+}
+@media (max-width: 515px) {
+  .new-footer .made-with-love-1 .heart-container {
+    width: 25px;
+    height: 25px;
+    margin: 0 1%;
+  }
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -410,13 +449,13 @@ table {
 }
 .stickyNav {
   width: 100%;
-  position: static;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   top: 0px;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: transparent;
   padding: 1rem 0rem 1rem 0rem;
   margin: 0rem;
 }
@@ -681,8 +720,8 @@ table {
   width: 100%;
 }
 .overall-team-container .teammate2-container .teammate2-photo-container img:hover:hover {
+  transform: scale(1.1);
   transition: ease-in-out 0.7s;
-  transform: rotate(360deg);
 }
 .overall-team-container .teammate2-container h3 {
   padding-top: 4%;
@@ -729,7 +768,7 @@ table {
 }
 .overall-team-container .teammate2-container .teammate2-social-container {
   flex-direction: row;
-  width: 100%;
+  width: 85%;
   justify-content: center;
   margin: 0 auto;
   padding: 5%;
@@ -794,7 +833,7 @@ table {
   width: 100%;
 }
 .overall-team-container .teammate3-container .teammate3-photo-container img:hover:hover {
-  transform: rotateZ(-30deg);
+  transform: scale(1.1);
   transition: ease-in-out 0.7s;
 }
 .overall-team-container .teammate3-container h3 {
@@ -907,7 +946,7 @@ table {
   width: 100%;
 }
 .overall-team-container .teammate4-container .teammate4-photo-container img:hover:hover {
-  transform: rotateZ(-30deg);
+  transform: scale(1.1);
   transition: ease-in-out 0.7s;
 }
 .overall-team-container .teammate4-container h3 {
@@ -1362,62 +1401,10 @@ table {
     justify-content: center;
   }
 }
-.footer {
-  display: flex;
-  height: 300px;
-  width: 100%;
-  background-color: black;
-  justify-content: center;
-}
-.footer .made-with-love-1 {
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-}
-.footer .made-with-love-1 h6 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  line-height: 0.9;
-  letter-spacing: 2px;
-}
-@media (max-width: 515px) {
-  .footer .made-with-love-1 h6 {
-    color: white;
-    margin: 3% 0;
-    font-size: 0.9rem;
-  }
-}
-.footer .made-with-love-1 .heart-container {
-  width: 90px;
-  height: 90px;
-}
-.footer .made-with-love-1 .heart-container img {
-  width: 100%;
-}
-@media (max-width: 515px) {
-  .footer .made-with-love-1 .heart-container img {
-    width: 100%;
-  }
-}
-@media (max-width: 515px) {
-  .footer .made-with-love-1 .heart-container {
-    width: 25px;
-    height: 25px;
-    margin: 0 1%;
-  }
-}
-@media (max-width: 515px) {
-  .footer .made-with-love-1 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-}
-@media (max-width: 515px) {
-  .footer {
-    display: flex;
-    height: 125px;
-    justify-content: center;
-  }
+.curved {
+  position: relative;
+  background: #2c3e50;
+  height: 50vh;
+  border-bottom-left-radius: 50% 36%;
+  border-bottom-right-radius: 50% 36%;
 }
