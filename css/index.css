@@ -1478,7 +1478,7 @@ table {
 }
 .curved .fav-food-badge-container .badge-holder {
   flex-direction: row;
-  width: 18%;
+  width: 12%;
   justify-content: center;
   margin: 0 auto;
   text-align-last: justify;
