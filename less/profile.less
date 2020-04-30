@@ -50,7 +50,7 @@
       h2 {
         margin-top: 4%;
         font-family: @pFont;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         text-align: center;
         color: #838383;
         font-weight: lighter;
@@ -62,11 +62,78 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 1%;
+    margin-top: 1.2%;
 
     .separator {
       width: 3.5em;
       border-bottom: 3px solid #e3e3e3;
     } // this closes separator
   } //this closes .separator-container
+
+  .fav-food-badge-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.8%;
+    flex-direction: column;
+
+    h3 {
+      font-family: @pFont;
+      width: 100%;
+      font-size: 0.8rem;
+      text-align: center;
+      color: #838383;
+      margin-bottom: 0.7%;
+    } // this closes <h3>
+
+    .badge-holder {
+      //   margin-top: %;
+      flex-direction: row;
+      width: 18%;
+      justify-content: center;
+      margin: 0 auto;
+      //   padding: 5%;
+      text-align-last: justify;
+
+      .bbq {
+        width: 30px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // this closes bbq
+
+      .burger {
+        width: 30px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // this closes .burger
+
+      .taco {
+        width: 30px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // closes .taco
+
+      .sushi {
+        width: 30px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // closes .sushi
+
+      .italian {
+        width: 30px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // this closes .italian
+    } // this closes .badge-holder
+  } // this closes .fav-food-container
 } // this closes curved

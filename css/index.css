@@ -1446,7 +1446,7 @@ table {
 .curved .profile-name .name h2 {
   margin-top: 4%;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #838383;
   font-weight: lighter;
@@ -1455,9 +1455,66 @@ table {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 1%;
+  margin-top: 1.2%;
 }
 .curved .separator-container .separator {
   width: 3.5em;
   border-bottom: 3px solid #e3e3e3;
+}
+.curved .fav-food-badge-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.8%;
+  flex-direction: column;
+}
+.curved .fav-food-badge-container h3 {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #838383;
+  margin-bottom: 0.7%;
+}
+.curved .fav-food-badge-container .badge-holder {
+  flex-direction: row;
+  width: 18%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align-last: justify;
+}
+.curved .fav-food-badge-container .badge-holder .bbq {
+  width: 30px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.curved .fav-food-badge-container .badge-holder .burger {
+  width: 30px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.curved .fav-food-badge-container .badge-holder .taco {
+  width: 30px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.curved .fav-food-badge-container .badge-holder .sushi {
+  width: 30px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.curved .fav-food-badge-container .badge-holder .italian {
+  width: 30px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
 }
