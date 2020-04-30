@@ -56,22 +56,23 @@
 .white-space {
   height: 100vh;
   width: 100vw;
-  // position: relative;
+  position: relative;
   background-size: cover;
   background-position: 50% 50%;
   background-image: url("../assets/sebastien-marchand-oVIUvwm2dvM-unsplash.jpg");
-  position: absolute;
+  // position: absolute;
 
   h1 {
     font-family: @decorFont;
     color: white;
     max-width: 100%;
     margin: 0 5%;
-    margin-top: 9%;
+    // margin-top: 9%;
+    padding-top: 15%;
     font-size: 4.5rem;
     line-height: 0.9;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 60px; // fix this
 
     @media (max-width: 515px) {
       font-size: 2.5rem;
@@ -109,6 +110,55 @@
 
 .infoBreakdown {
   height: 100vh;
-  background-color: white;
-  // width: 100%;
-}
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../assets/fresh-bread-with-dark-overlay.png");
+  // position: absolute;
+  // display: flex;
+
+  h1 {
+    padding-top: 5%;
+    font-family: @decorFont;
+    font-size: 5.7rem;
+    line-height: 0.9;
+    text-align: center;
+    color: white;
+    width: 100%;
+    letter-spacing: 2px;
+
+    @media (max-width: 515px) {
+      font-size: 2.5rem;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      padding-top: 10%;
+    } // this closes @media for <h1>
+  } // this closes <h1>
+
+  p {
+    font-family: @pFont;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 0.9;
+    color: white;
+    text-align: center;
+    margin: 0 20%;
+    padding: 20px;
+    margin-bottom: 53px;
+    padding-bottom: 135px;
+
+    @media (max-width: 515px) {
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      line-height: 1.4;
+      margin: 0 auto;
+    } // this closes @media for <p>
+  } // this closes <p>
+
+  @media (max-width: 515px) {
+    height: 100vh;
+    width: 100vw;
+  } // @media for .infoBreakdown
+} // this closes .infoBreakdown
