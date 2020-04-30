@@ -768,7 +768,7 @@ table {
 }
 .overall-team-container .teammate2-container .teammate2-social-container {
   flex-direction: row;
-  width: 85%;
+  width: 100%;
   justify-content: center;
   margin: 0 auto;
   padding: 5%;
@@ -1484,35 +1484,35 @@ table {
   text-align-last: justify;
 }
 .curved .fav-food-badge-container .badge-holder .bbq {
-  width: 30px;
+  width: 33px;
   margin: 0 auto;
   background-color: white;
   border: 5px solid white;
   border-radius: 50%;
 }
 .curved .fav-food-badge-container .badge-holder .burger {
-  width: 30px;
+  width: 33px;
   margin: 0 auto;
   background-color: white;
   border: 5px solid white;
   border-radius: 50%;
 }
 .curved .fav-food-badge-container .badge-holder .taco {
-  width: 30px;
+  width: 33px;
   margin: 0 auto;
   background-color: white;
   border: 5px solid white;
   border-radius: 50%;
 }
 .curved .fav-food-badge-container .badge-holder .sushi {
-  width: 30px;
+  width: 33px;
   margin: 0 auto;
   background-color: white;
   border: 5px solid white;
   border-radius: 50%;
 }
 .curved .fav-food-badge-container .badge-holder .italian {
-  width: 30px;
+  width: 33px;
   margin: 0 auto;
   background-color: white;
   border: 5px solid white;
