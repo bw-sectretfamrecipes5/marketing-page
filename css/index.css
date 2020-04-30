@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 10px 0;
 }
 .new-footer .made-with-love-1 {
   align-items: flex-end;
@@ -11,9 +11,10 @@
 }
 .new-footer .made-with-love-1 h6 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 0.9;
   letter-spacing: 2px;
+  color: #838383;
 }
 @media (max-width: 515px) {
   .new-footer .made-with-love-1 h6 {
@@ -23,8 +24,8 @@
   }
 }
 .new-footer .made-with-love-1 .heart-container {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   margin: 0 10px;
 }
 .new-footer .made-with-love-1 .heart-container img {
@@ -1415,11 +1416,11 @@ table {
 }
 .curved .profile-image-container .profile-image {
   display: flex;
-  width: 12%;
+  width: 11%;
   background-color: white;
   border-radius: 50%;
   justify-content: center;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 .curved .profile-image-container .profile-image img {
   border-radius: 50%;
@@ -1517,4 +1518,68 @@ table {
   background-color: white;
   border: 5px solid white;
   border-radius: 50%;
+}
+.recipe-display {
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
+.recipe-display .recipe-container {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.recipe-display .recipe-container .row1 {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.recipe-display .recipe-container .row1 .recipe1 {
+  width: 15%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.recipe-display .recipe-container .row1 .recipe1 img {
+  width: 100%;
+  margin: 0 auto;
+  border: 5px solid white;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
+  margin-bottom: 5%;
+  filter: grayscale(100%);
+  transition: 0.8s ease-in-out;
+}
+.recipe-display .recipe-container .row1 .recipe1 img:hover:hover {
+  transition: 0.8s ease-in-out;
+  filter: none;
+  transform: scale(1.1);
+}
+.recipe-display .recipe-container .row1 .recipe1 h2 {
+  margin-top: 6%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 3%;
+}
+.recipe-display .recipe-container .row1 .recipe1 .separator-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2%;
+}
+.recipe-display .recipe-container .row1 .recipe1 .separator-container .separator {
+  width: 3.5em;
+  border-bottom: 3px solid #e3e3e3;
+}
+.recipe-display .recipe-container .row1 .recipe1 h3 {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #838383;
+  margin-top: 4%;
 }
