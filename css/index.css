@@ -1627,6 +1627,7 @@ table {
   width: 100%;
   display: flex;
   margin: 0 auto;
+  flex-direction: column;
 }
 .recipe-display .recipe-container .row1 {
   width: 100%;
@@ -1681,4 +1682,9 @@ table {
   text-align: center;
   color: #838383;
   margin-top: 4%;
+}
+.recipe-display .recipe-container .form {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
 }
