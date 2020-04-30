@@ -1,0 +1,269 @@
+.curved {
+  position: relative;
+  background: #2c3e50;
+  height: 50vh;
+  border-bottom-left-radius: 50% 36%;
+  border-bottom-right-radius: 50% 36%;
+
+  .profile-image-container {
+    display: flex;
+    // flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+    .profile-image {
+      display: flex;
+      width: 11%;
+      background-color: white;
+      border-radius: 50%;
+      // border: 2px solid rgba(42, 62, 80);
+      // box-shadow: 2em 2em 4em rgba(42, 62, 80, 0.32);
+      justify-content: center;
+      margin-top: 5%;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+      } //this closes <img>
+    } // this closes .profile-image
+  } // this closes .profile-image-container
+
+  .profile-name {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1%;
+
+    .name {
+      display: flex;
+      width: 17%;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        font-family: @heading-font;
+        font-size: 2.5rem;
+        text-align: center;
+        color: white;
+      } // this closes <h1>
+
+      h2 {
+        margin-top: 4%;
+        font-family: @pFont;
+        font-size: 1.3rem;
+        text-align: center;
+        color: #838383;
+        font-weight: lighter;
+      } // this closes <h2>
+    } // this closes name
+  } // This closes .profile-name
+
+  .separator-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.2%;
+
+    .separator {
+      width: 3.5em;
+      border-bottom: 3px solid #e3e3e3;
+    } // this closes separator
+  } //this closes .separator-container
+
+  .fav-food-badge-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.8%;
+    flex-direction: column;
+
+    h3 {
+      font-family: @pFont;
+      width: 100%;
+      font-size: 0.8rem;
+      text-align: center;
+      color: #838383;
+      margin-bottom: 0.7%;
+    } // this closes <h3>
+
+    .badge-holder {
+      //   margin-top: %;
+      flex-direction: row;
+      width: 12%;
+      justify-content: center;
+      margin: 0 auto;
+      //   padding: 5%;
+      text-align-last: justify;
+
+      .bbq {
+        width: 33px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // this closes bbq
+
+      .burger {
+        width: 33px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // this closes .burger
+
+      .taco {
+        width: 33px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // closes .taco
+
+      .sushi {
+        width: 33px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // closes .sushi
+
+      .italian {
+        width: 33px;
+        margin: 0 auto;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+      } // this closes .italian
+    } // this closes .badge-holder
+  } // this closes .fav-food-container
+} // this closes curved
+
+.recipe-display {
+  width: 100%;
+  display: flex;
+  background-color: white;
+
+  .recipe-container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+
+    .row1 {
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 5%;
+      margin-bottom: 5%;
+
+      .recipe1 {
+        width: 15%;
+        margin: 0 auto;
+        flex-direction: column;
+        // margin-bottom: 2%;
+        // padding: 2%;
+
+        img {
+          width: 100%;
+          margin: 0 auto;
+          border: 5px solid white;
+          box-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
+          margin-bottom: 5%;
+          filter: grayscale(100%);
+          transition: 0.8s ease-in-out;
+
+          &:hover {
+            .grayscaleChange();
+          }
+        } // this closes <img> in .recipe1
+
+        h2 {
+          margin-top: 6%;
+          font-family: @pFont;
+          font-size: 1.3rem;
+          text-align: center;
+          color: black;
+          font-weight: lighter;
+          letter-spacing: 2px;
+          margin-bottom: 3%;
+        } // this closes <h2> inside .recipe1
+
+        .separator-container {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          margin-top: 2%;
+
+          .separator {
+            width: 3.5em;
+            border-bottom: 3px solid #e3e3e3;
+          } // this closes separator
+        } //this closes .separator-container
+
+        h3 {
+          font-family: @pFont;
+          width: 100%;
+          font-size: 0.8rem;
+          text-align: center;
+          color: #838383;
+          // margin-bottom: 0.7%;
+          margin-top: 4%;
+        } // this closes <h3> inside .recipe1
+      } // this closes .recipe1
+
+      // .recipe2 {
+      //   width: 15%;
+      //   margin: 0 auto;
+      //   flex-direction: column;
+      //   // margin-bottom: 2%;
+      //   // padding: 2%;
+
+      //   img {
+      //     width: 100%;
+      //     margin: 0 auto;
+      //     border: 5px solid white;
+      //     box-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
+      //     margin-bottom: 5%;
+      //     filter: grayscale(100%);
+      //     transition: 0.8s ease-in-out;
+
+      //     &:hover {
+      //       .grayscaleChange();
+      //     }
+      //   } // this closes <img> in .recipe2
+
+      //   h2 {
+      //     margin-top: 6%;
+      //     font-family: @pFont;
+      //     font-size: 1.3rem;
+      //     text-align: center;
+      //     color: black;
+      //     font-weight: lighter;
+      //     letter-spacing: 2px;
+      //     margin-bottom: 3%;
+      //   } // this closes <h2> inside .recipe2
+
+      //   .separator-container {
+      //     display: flex;
+      //     width: 100%;
+      //     justify-content: center;
+      //     margin-top: 2%;
+
+      //     .separator {
+      //       width: 3.5em;
+      //       border-bottom: 3px solid #e3e3e3;
+      //     } // this closes separator
+      //   } //this closes .separator-container
+
+      //   h3 {
+      //     font-family: @pFont;
+      //     width: 100%;
+      //     font-size: 0.8rem;
+      //     text-align: center;
+      //     color: #838383;
+      //     // margin-bottom: 0.7%;
+      //     margin-top: 4%;
+      //   } // this closes <h3> inside .recipe2
+      // } // this closes .recipe2
+    } // this closes row 1
+  } // this closes .recipe-container
+} // this closes .recipe-diplay

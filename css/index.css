@@ -1,0 +1,1592 @@
+.new-footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px 0;
+}
+.new-footer .made-with-love-1 {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+.new-footer .made-with-love-1 h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  color: #838383;
+}
+@media (max-width: 515px) {
+  .new-footer .made-with-love-1 h6 {
+    color: white;
+    margin: 3% 0;
+    font-size: 0.9rem;
+  }
+}
+.new-footer .made-with-love-1 .heart-container {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+}
+.new-footer .made-with-love-1 .heart-container img {
+  width: 100%;
+}
+@media (max-width: 515px) {
+  .new-footer .made-with-love-1 .heart-container {
+    width: 25px;
+    height: 25px;
+    margin: 0 1%;
+  }
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+p {
+  line-height: 1.5rem;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Homemade Apple';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Homemade Apple Regular'), local('HomemadeApple-Regular'), url(https://fonts.gstatic.com/s/homemadeapple/v10/Qw3EZQFXECDrI2q789EKQZJob3x9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  text-decoration: none;
+  color: white;
+  font-size: 4.5vh;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+nav a {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: auto;
+  padding: 0% 3%;
+  justify-content: flex-end;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding-bottom: 10%;
+  box-sizing: border-box;
+  color: white;
+  background: url(../assets/dark-burger-with-knife.jpg) center center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 515px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+  }
+}
+.hero-title {
+  font-family: "Open Sans", sans-serif;
+  max-width: 100%;
+  margin: 0 4%;
+  margin-top: 9%;
+  font-size: 9rem;
+  font-weight: bold;
+  line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .hero-title {
+    font-family: "Open Sans", sans-serif;
+    max-width: 100%;
+    margin: 0 4%;
+    margin-top: 9%;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
+.hero-sub {
+  font-family: "Homemade Apple", cursive;
+  letter-spacing: 2px;
+  max-width: 100%;
+  margin: 0 4%;
+  margin-left: 11%;
+  margin-top: 7%;
+  font-size: 3rem;
+  line-height: 0.5;
+  font-weight: lighter;
+}
+@media (max-width: 515px) {
+  .hero-sub {
+    font-family: "Homemade Apple", cursive;
+    letter-spacing: 7px;
+    max-width: 100%;
+    margin: 0 4%;
+    margin-left: 11%;
+    margin-top: 7%;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-weight: lighter;
+  }
+}
+.cta {
+  display: flex;
+  margin: 3% 8%;
+  margin-top: 8%;
+  transition: ease-in-out 0.5s;
+  justify-content: center;
+}
+.cta .buttons {
+  padding: 18px 48px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+  font-size: 1.6rem;
+  border: 3px solid white;
+  border-radius: 12px;
+}
+.cta .buttons:hover:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 515px) {
+  .cta .buttons {
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    font-size: 1.6rem;
+    border: 3px solid white;
+    border-radius: 12px;
+  }
+  .cta .buttons:hover:hover {
+    background-color: white;
+    color: black;
+  }
+}
+@media (max-width: 515px) {
+  .cta {
+    display: flex;
+    margin: 3% 8%;
+    margin-top: 8%;
+  }
+}
+.hero-footer {
+  display: flex;
+  margin-bottom: 1%;
+}
+.spices {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../assets/light-spices.jpg");
+}
+.spices .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.spices .overlay h1 {
+  font-family: "Homemade Apple", cursive;
+  max-width: 100%;
+  margin: 0 5%;
+  margin-top: 9%;
+  font-size: 4.5rem;
+  line-height: 0.9;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.spices .overlay p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 0.9;
+  color: white;
+  text-align: center;
+  margin: 0 20%;
+  padding: 20px;
+  margin-bottom: 53px;
+  padding-bottom: 135px;
+}
+.white-space {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../assets/sebastien-marchand-oVIUvwm2dvM-unsplash.jpg");
+  position: absolute;
+}
+.white-space h1 {
+  font-family: "Homemade Apple", cursive;
+  color: white;
+  max-width: 100%;
+  margin: 0 5%;
+  margin-top: 9%;
+  font-size: 4.5rem;
+  line-height: 0.9;
+  text-align: center;
+  padding-bottom: 60px;
+}
+@media (max-width: 515px) {
+  .white-space h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+.white-space p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 0.9;
+  color: white;
+  text-align: center;
+  margin: 0 20%;
+  padding: 20px;
+  margin-bottom: 53px;
+  padding-bottom: 135px;
+}
+@media (max-width: 515px) {
+  .white-space p {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 515px) {
+  .white-space {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+.infoBreakdown {
+  height: 100vh;
+  background-color: white;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.stickyNav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  background-color: transparent;
+  padding: 1rem 0rem 1rem 0rem;
+  margin: 0rem;
+}
+.stickyNav .navContainer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.stickyNav .navContainer .newNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0rem;
+  margin: 0rem 0rem 0rem 5rem;
+  border-width: 1px;
+  border-radius: 0px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+  font-size: 1.6rem;
+  border-radius: 12px;
+}
+.stickyNav .navContainer .newNav a {
+  padding: 10px 18px;
+  font-size: 1.3rem;
+  margin: 0.5rem 5rem 0.5rem 0rem;
+  border-color: none;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 0px;
+}
+.stickyNav .navContainer .newNav a:hover:hover {
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+@media (max-width: 515px) {
+  .stickyNav .navContainer .newNav a:hover:hover:hover {
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    border: 1px solid white;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 515px) {
+  .stickyNav .navContainer .newNav a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 515px) {
+  .stickyNav .navContainer .newNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+}
+@media (max-width: 515px) {
+  .stickyNav .navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 515px) {
+  .stickyNav {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    position: static;
+  }
+}
+.about {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../assets/about-us-cutting-board.jpg);
+}
+@media (max-width: 515px) {
+  .about {
+    height: auto;
+    width: 100vw;
+    background-image: url(../assets/cutting-board-filtered.png);
+  }
+}
+.our-team-container {
+  width: 100%;
+  margin: 1px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+.our-team-container .our-team-wording {
+  font-family: "Homemade Apple", cursive;
+  font-size: 5.5rem;
+  margin-top: 5%;
+}
+@media (max-width: 515px) {
+  .our-team-container .our-team-wording {
+    color: white;
+    margin-top: 5%;
+    font-size: 2.7rem;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 515px) {
+  .our-team-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9%;
+    padding-top: 5%;
+  }
+}
+.overall-team-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.overall-team-container .teammate1-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: center;
+}
+.overall-team-container .teammate1-container .teammate1-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.overall-team-container .teammate1-container .teammate1-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+}
+.overall-team-container .teammate1-container .teammate1-photo-container img:hover:hover {
+  transform: scale(1.13);
+  transition: ease-in-out 0.7s;
+}
+.overall-team-container .teammate1-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate1-container h3 {
+    color: white;
+  }
+}
+.overall-team-container .teammate1-container h5 {
+  padding-top: 6%;
+  width: 100%;
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.4rem;
+  line-height: 0.9;
+  letter-spacing: 5px;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate1-container h5 {
+    color: white;
+    margin: 3% 0;
+    font-size: 2.5rem;
+  }
+}
+.overall-team-container .teammate1-container h4 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 0.9;
+  color: #5c5c5c;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate1-container h4 {
+    color: white;
+  }
+}
+.overall-team-container .teammate1-container .teammate1-social-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  text-align-last: justify;
+}
+.overall-team-container .teammate1-container .teammate1-social-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.overall-team-container .teammate1-container .teammate1-social-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.overall-team-container .teammate1-container .teammate1-social-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate1-container .teammate1-social-container {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate1-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 8%;
+    border-bottom: 1px solid snow;
+  }
+}
+.overall-team-container .teammate2-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: center;
+}
+.overall-team-container .teammate2-container .teammate2-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.overall-team-container .teammate2-container .teammate2-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+}
+.overall-team-container .teammate2-container .teammate2-photo-container img:hover:hover {
+  transform: scale(1.13);
+  transition: ease-in-out 0.7s;
+}
+.overall-team-container .teammate2-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate2-container h3 {
+    color: white;
+  }
+}
+.overall-team-container .teammate2-container h5 {
+  padding-top: 6%;
+  width: 100%;
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.4rem;
+  line-height: 0.9;
+  letter-spacing: 5px;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate2-container h5 {
+    color: white;
+    margin: 3% 0;
+    font-size: 2.5rem;
+  }
+}
+.overall-team-container .teammate2-container h4 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 0.9;
+  color: #5c5c5c;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate2-container h4 {
+    color: white;
+  }
+}
+.overall-team-container .teammate2-container .teammate2-social-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  text-align-last: justify;
+}
+.overall-team-container .teammate2-container .teammate2-social-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.overall-team-container .teammate2-container .teammate2-social-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.overall-team-container .teammate2-container .teammate2-social-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate2-container .teammate2-social-container {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate2-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 8%;
+    border-bottom: 1px solid snow;
+  }
+}
+.overall-team-container .teammate3-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: center;
+}
+.overall-team-container .teammate3-container .teammate3-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.overall-team-container .teammate3-container .teammate3-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+}
+.overall-team-container .teammate3-container .teammate3-photo-container img:hover:hover {
+  transform: scale(1.13);
+  transition: ease-in-out 0.7s;
+}
+.overall-team-container .teammate3-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate3-container h3 {
+    color: white;
+  }
+}
+.overall-team-container .teammate3-container h5 {
+  padding-top: 6%;
+  width: 100%;
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.4rem;
+  line-height: 0.9;
+  letter-spacing: 5px;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate3-container h5 {
+    color: white;
+    margin: 3% 0;
+    font-size: 2.5rem;
+  }
+}
+.overall-team-container .teammate3-container h4 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 0.9;
+  color: #5c5c5c;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate3-container h4 {
+    color: white;
+  }
+}
+.overall-team-container .teammate3-container .teammate3-social-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  text-align-last: justify;
+}
+.overall-team-container .teammate3-container .teammate3-social-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.overall-team-container .teammate3-container .teammate3-social-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.overall-team-container .teammate3-container .teammate3-social-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate3-container .teammate3-social-container {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate3-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 5%;
+    border-bottom: 1px solid snow;
+  }
+}
+.overall-team-container .teammate4-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: center;
+}
+.overall-team-container .teammate4-container .teammate4-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.overall-team-container .teammate4-container .teammate4-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+}
+.overall-team-container .teammate4-container .teammate4-photo-container img:hover:hover {
+  transform: scale(1.13);
+  transition: ease-in-out 0.7s;
+}
+.overall-team-container .teammate4-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate4-container h3 {
+    color: white;
+  }
+}
+.overall-team-container .teammate4-container h5 {
+  padding-top: 6%;
+  width: 100%;
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.4rem;
+  line-height: 0.9;
+  letter-spacing: 5px;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate4-container h5 {
+    color: white;
+    margin: 3% 0;
+    font-size: 2.5rem;
+  }
+}
+.overall-team-container .teammate4-container h4 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 0.9;
+  color: #5c5c5c;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate4-container h4 {
+    color: white;
+  }
+}
+.overall-team-container .teammate4-container .teammate4-social-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  text-align-last: justify;
+}
+.overall-team-container .teammate4-container .teammate4-social-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.overall-team-container .teammate4-container .teammate4-social-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.overall-team-container .teammate4-container .teammate4-social-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate4-container .teammate4-social-container {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 515px) {
+  .overall-team-container .teammate4-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 5%;
+    border-bottom: 1px solid snow;
+  }
+}
+@media (max-width: 515px) {
+  .overall-team-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.new-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+.new-container .teammate6-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: center;
+}
+.new-container .teammate6-container .teammate6-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.new-container .teammate6-container .teammate6-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+}
+.new-container .teammate6-container .teammate6-photo-container img:hover:hover {
+  transform: scale(1.13);
+  transition: ease-in-out 0.7s;
+}
+.new-container .teammate6-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .new-container .teammate6-container h3 {
+    color: white;
+  }
+}
+.new-container .teammate6-container h5 {
+  padding-top: 6%;
+  width: 100%;
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.4rem;
+  line-height: 0.9;
+  letter-spacing: 5px;
+}
+@media (max-width: 515px) {
+  .new-container .teammate6-container h5 {
+    color: white;
+    margin: 3% 0;
+    font-size: 2.5rem;
+  }
+}
+.new-container .teammate6-container h4 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 0.9;
+  color: #5c5c5c;
+}
+@media (max-width: 515px) {
+  .new-container .teammate6-container h4 {
+    color: white;
+  }
+}
+.new-container .teammate6-container .teammate6-social-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  text-align-last: justify;
+}
+.new-container .teammate6-container .teammate6-social-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.new-container .teammate6-container .teammate6-social-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.new-container .teammate6-container .teammate6-social-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+@media (max-width: 515px) {
+  .new-container .teammate6-container .teammate6-social-container {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 515px) {
+  .new-container .teammate6-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 8%;
+    border-bottom: 1px solid snow;
+  }
+}
+.new-container .teammate7-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: center;
+}
+.new-container .teammate7-container .teammate7-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.new-container .teammate7-container .teammate7-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+}
+.new-container .teammate7-container .teammate7-photo-container img:hover:hover {
+  transform: scale(1.13);
+  transition: ease-in-out 0.7s;
+}
+.new-container .teammate7-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .new-container .teammate7-container h3 {
+    color: white;
+  }
+}
+.new-container .teammate7-container h5 {
+  padding-top: 6%;
+  width: 100%;
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.4rem;
+  line-height: 0.9;
+  letter-spacing: 5px;
+}
+@media (max-width: 515px) {
+  .new-container .teammate7-container h5 {
+    color: white;
+    margin: 3% 0;
+    font-size: 2.5rem;
+  }
+}
+.new-container .teammate7-container h4 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 0.9;
+  color: #5c5c5c;
+}
+@media (max-width: 515px) {
+  .new-container .teammate7-container h4 {
+    color: white;
+  }
+}
+.new-container .teammate7-container .teammate7-social-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  text-align-last: justify;
+}
+.new-container .teammate7-container .teammate7-social-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.new-container .teammate7-container .teammate7-social-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.new-container .teammate7-container .teammate7-social-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+@media (max-width: 515px) {
+  .new-container .teammate7-container .teammate7-social-container {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 515px) {
+  .new-container .teammate7-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 8%;
+    border-bottom: 1px solid snow;
+  }
+}
+.new-container .teammate5-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: center;
+}
+.new-container .teammate5-container .teammate5-photo-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5%;
+}
+.new-container .teammate5-container .teammate5-photo-container img {
+  border-radius: 50%;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+}
+.new-container .teammate5-container .teammate5-photo-container img:hover:hover {
+  transform: scale(1.13);
+  transition: ease-in-out 0.7s;
+}
+.new-container .teammate5-container h3 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+@media (max-width: 515px) {
+  .new-container .teammate5-container h3 {
+    color: white;
+  }
+}
+.new-container .teammate5-container h5 {
+  padding-top: 6%;
+  width: 100%;
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.4rem;
+  line-height: 0.9;
+  letter-spacing: 5px;
+}
+@media (max-width: 515px) {
+  .new-container .teammate5-container h5 {
+    color: white;
+    margin: 3% 0;
+    font-size: 2.5rem;
+  }
+}
+.new-container .teammate5-container h4 {
+  padding-top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 0.9;
+  color: #5c5c5c;
+}
+@media (max-width: 515px) {
+  .new-container .teammate5-container h4 {
+    color: white;
+  }
+}
+.new-container .teammate5-container .teammate5-social-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  text-align-last: justify;
+}
+.new-container .teammate5-container .teammate5-social-container .github {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.new-container .teammate5-container .teammate5-social-container .twitter {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+.new-container .teammate5-container .teammate5-social-container .email {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid white;
+  padding: 6px;
+  background-color: white;
+  margin: 0 auto;
+}
+@media (max-width: 515px) {
+  .new-container .teammate5-container .teammate5-social-container {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 515px) {
+  .new-container .teammate5-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 8%;
+    border-bottom: 1px solid snow;
+  }
+}
+@media (max-width: 515px) {
+  .new-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.curved {
+  position: relative;
+  background: #2c3e50;
+  height: 50vh;
+  border-bottom-left-radius: 50% 36%;
+  border-bottom-right-radius: 50% 36%;
+}
+.curved .profile-image-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.curved .profile-image-container .profile-image {
+  display: flex;
+  width: 11%;
+  background-color: white;
+  border-radius: 50%;
+  justify-content: center;
+  margin-top: 5%;
+}
+.curved .profile-image-container .profile-image img {
+  border-radius: 50%;
+  width: 100%;
+}
+.curved .profile-name {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1%;
+}
+.curved .profile-name .name {
+  display: flex;
+  width: 17%;
+  justify-content: center;
+  flex-direction: column;
+}
+.curved .profile-name .name h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+.curved .profile-name .name h2 {
+  margin-top: 4%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #838383;
+  font-weight: lighter;
+}
+.curved .separator-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1.2%;
+}
+.curved .separator-container .separator {
+  width: 3.5em;
+  border-bottom: 3px solid #e3e3e3;
+}
+.curved .fav-food-badge-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.8%;
+  flex-direction: column;
+}
+.curved .fav-food-badge-container h3 {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #838383;
+  margin-bottom: 0.7%;
+}
+.curved .fav-food-badge-container .badge-holder {
+  flex-direction: row;
+  width: 12%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align-last: justify;
+}
+.curved .fav-food-badge-container .badge-holder .bbq {
+  width: 33px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.curved .fav-food-badge-container .badge-holder .burger {
+  width: 33px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.curved .fav-food-badge-container .badge-holder .taco {
+  width: 33px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.curved .fav-food-badge-container .badge-holder .sushi {
+  width: 33px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.curved .fav-food-badge-container .badge-holder .italian {
+  width: 33px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.recipe-display {
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
+.recipe-display .recipe-container {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.recipe-display .recipe-container .row1 {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.recipe-display .recipe-container .row1 .recipe1 {
+  width: 15%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.recipe-display .recipe-container .row1 .recipe1 img {
+  width: 100%;
+  margin: 0 auto;
+  border: 5px solid white;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
+  margin-bottom: 5%;
+  filter: grayscale(100%);
+  transition: 0.8s ease-in-out;
+}
+.recipe-display .recipe-container .row1 .recipe1 img:hover:hover {
+  transition: 0.8s ease-in-out;
+  filter: none;
+  transform: scale(1.1);
+}
+.recipe-display .recipe-container .row1 .recipe1 h2 {
+  margin-top: 6%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 3%;
+}
+.recipe-display .recipe-container .row1 .recipe1 .separator-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2%;
+}
+.recipe-display .recipe-container .row1 .recipe1 .separator-container .separator {
+  width: 3.5em;
+  border-bottom: 3px solid #e3e3e3;
+}
+.recipe-display .recipe-container .row1 .recipe1 h3 {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #838383;
+  margin-top: 4%;
+}

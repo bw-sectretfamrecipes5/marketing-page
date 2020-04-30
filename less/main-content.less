@@ -1,0 +1,114 @@
+// Main Content
+.spices {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../assets/light-spices.jpg");
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    // align-items: flex-center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-family: @decorFont;
+      max-width: 100%;
+      margin: 0 5%;
+      margin-top: 9%;
+      font-size: 4.5rem;
+      //   font-weight: ;
+      line-height: 0.9;
+      //   justify-content: center;
+      text-align: center;
+      padding-bottom: 60px;
+      //   margin-bottom: 80px;
+      //   margin-bottom: 30%;
+      //   align-items: flex-start;
+    } // this closes h1
+
+    p {
+      font-family: @pFont;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      line-height: 0.9;
+      color: white;
+      text-align: center;
+      margin: 0 20%;
+      padding: 20px;
+      margin-bottom: 53px;
+      padding-bottom: 135px;
+      //   margin-bottom: 30%;
+      //   margin-top: 15%;
+    } // this closes p
+  } // this closes overlay
+} // this closes spices
+
+.white-space {
+  height: 100vh;
+  width: 100vw;
+  // position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../assets/sebastien-marchand-oVIUvwm2dvM-unsplash.jpg");
+  position: absolute;
+
+  h1 {
+    font-family: @decorFont;
+    color: white;
+    max-width: 100%;
+    margin: 0 5%;
+    margin-top: 9%;
+    font-size: 4.5rem;
+    line-height: 0.9;
+    text-align: center;
+    padding-bottom: 60px;
+
+    @media (max-width: 515px) {
+      font-size: 2.5rem;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+  } // this closes h1
+
+  p {
+    font-family: @pFont;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 0.9;
+    color: white;
+    text-align: center;
+    margin: 0 20%;
+    padding: 20px;
+    margin-bottom: 53px;
+    padding-bottom: 135px;
+
+    @media (max-width: 515px) {
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+      line-height: 1.6;
+      margin: 0 auto;
+    }
+  } // this closes p
+
+  @media (max-width: 515px) {
+    height: 100vh;
+    width: 100vw;
+  } // @media for .white-space
+} // this closes white-space
+
+.infoBreakdown {
+  height: 100vh;
+  background-color: white;
+  // width: 100%;
+}

@@ -1,0 +1,76 @@
+// Mix Ins //
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container () {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hoverEase () {
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.hoverEasePink () {
+  &:hover {
+    background-color: #e20074;
+    color: white;
+    border: 1px solid #e20074;
+  }
+}
+
+.shadow () {
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.navHover () {
+  &:hover {
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    border: 1px solid white;
+    border-radius: 12px;
+  }
+}
+
+.aboutUsH3 () {
+  font-family: @heading-font;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.rotate () {
+  &:hover {
+    transition: ease-in-out 0.7s;
+    transform: rotate(360deg);
+  }
+}
+
+.grow () {
+  &:hover {
+    transform: scale(1.13);
+    transition: ease-in-out 0.7s;
+  }
+}
+
+.shift () {
+  &:hover {
+    transform: rotateZ(-30deg);
+    transition: ease-in-out 0.7s;
+  }
+}
+
+.grayscaleChange () {
+  &:hover {
+    transition: 0.8s ease-in-out;
+    filter: none;
+    transform: scale(1.1);
+  }
+}
