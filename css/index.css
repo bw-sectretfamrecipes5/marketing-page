@@ -1408,3 +1408,56 @@ table {
   border-bottom-left-radius: 50% 36%;
   border-bottom-right-radius: 50% 36%;
 }
+.curved .profile-image-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.curved .profile-image-container .profile-image {
+  display: flex;
+  width: 12%;
+  background-color: white;
+  border-radius: 50%;
+  justify-content: center;
+  margin-top: 3%;
+}
+.curved .profile-image-container .profile-image img {
+  border-radius: 50%;
+  width: 100%;
+}
+.curved .profile-name {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1%;
+}
+.curved .profile-name .name {
+  display: flex;
+  width: 17%;
+  justify-content: center;
+  flex-direction: column;
+}
+.curved .profile-name .name h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+.curved .profile-name .name h2 {
+  margin-top: 4%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #838383;
+  font-weight: lighter;
+}
+.curved .separator-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1%;
+}
+.curved .separator-container .separator {
+  width: 3.5em;
+  border-bottom: 3px solid #e3e3e3;
+}
