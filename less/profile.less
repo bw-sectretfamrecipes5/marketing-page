@@ -147,6 +147,7 @@
     width: 100%;
     display: flex;
     margin: 0 auto;
+    flex-direction: column;
 
     .row1 {
       width: 100%;
@@ -209,61 +210,11 @@
           margin-top: 4%;
         } // this closes <h3> inside .recipe1
       } // this closes .recipe1
-
-      // .recipe2 {
-      //   width: 15%;
-      //   margin: 0 auto;
-      //   flex-direction: column;
-      //   // margin-bottom: 2%;
-      //   // padding: 2%;
-
-      //   img {
-      //     width: 100%;
-      //     margin: 0 auto;
-      //     border: 5px solid white;
-      //     box-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
-      //     margin-bottom: 5%;
-      //     filter: grayscale(100%);
-      //     transition: 0.8s ease-in-out;
-
-      //     &:hover {
-      //       .grayscaleChange();
-      //     }
-      //   } // this closes <img> in .recipe2
-
-      //   h2 {
-      //     margin-top: 6%;
-      //     font-family: @pFont;
-      //     font-size: 1.3rem;
-      //     text-align: center;
-      //     color: black;
-      //     font-weight: lighter;
-      //     letter-spacing: 2px;
-      //     margin-bottom: 3%;
-      //   } // this closes <h2> inside .recipe2
-
-      //   .separator-container {
-      //     display: flex;
-      //     width: 100%;
-      //     justify-content: center;
-      //     margin-top: 2%;
-
-      //     .separator {
-      //       width: 3.5em;
-      //       border-bottom: 3px solid #e3e3e3;
-      //     } // this closes separator
-      //   } //this closes .separator-container
-
-      //   h3 {
-      //     font-family: @pFont;
-      //     width: 100%;
-      //     font-size: 0.8rem;
-      //     text-align: center;
-      //     color: #838383;
-      //     // margin-bottom: 0.7%;
-      //     margin-top: 4%;
-      //   } // this closes <h3> inside .recipe2
-      // } // this closes .recipe2
     } // this closes row 1
+    .form {
+      width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+    }
   } // this closes .recipe-container
 } // this closes .recipe-diplay
