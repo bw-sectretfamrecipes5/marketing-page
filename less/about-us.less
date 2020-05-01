@@ -16,13 +16,18 @@
 
   @media (max-width: 515px) {
     height: auto;
-    width: 100vw;
+    width: 100%;
     // position: relative;
     // background-size: cover;
     // background-position: 50% 50%;
     background-image: url(../assets/cutting-board-filtered.png);
-  } // this closes the media query for .about
-} // closes about
+  } // this closes @media 515px for .about
+
+  @media (max-width: 1000px) {
+    // height: auto;
+    width: 100%;
+  } // this closes @media 1000px for .aboout
+} // closes .about
 
 .our-team-container {
   width: 100%;
@@ -42,7 +47,19 @@
       margin-top: 5%;
       font-size: 2.7rem;
       margin-bottom: 3%;
-    }
+    } // this closes @media 515px for .our-team-wording
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      font-size: 3.5rem;
+      text-align: center;
+      margin-bottom: 3%;
+    } // this closes @media 1000px for .our-team-wording
+
+    @media (max-width: 1300px) {
+      font-size: 3.9rem;
+      margin-bottom: 3%;
+    } // this closes @media 1300px for .our-team-wording
   } // this closes .our-team-wording
 
   @media (max-width: 515px) {
@@ -92,8 +109,8 @@
         transition: ease-in-out 0.7s;
 
         &:hover {
-          .grow(); // .rotate() or .grow() so far
-        }
+          .grow();
+        } // closes &:hover for <img>
       } // this closes img
     } // this closes .teammate1-photo-container
 
@@ -107,8 +124,12 @@
 
       @media (max-width: 515px) {
         color: white;
-      }
-    } // this closes h3 for teammate2
+      } // this closes @media 515px for <h3>
+
+      @media (max-width: 1000px) {
+        font-size: 1.3rem;
+      } // this closes @media 1000px for <h3>
+    } // this closes h3 for teammate1
 
     h5 {
       padding-top: 6%;
@@ -123,8 +144,12 @@
         color: white;
         margin: 3% 0;
         font-size: 2.5rem;
-      }
-    }
+      } // this closes @media 515px for <h5>
+
+      @media (max-width: 1000px) {
+        font-size: 1.6rem;
+      } // this closes @media 1000px
+    } // this closes <h5>
 
     h4 {
       padding-top: 4%;
@@ -137,15 +162,20 @@
 
       @media (max-width: 515px) {
         color: white;
+      } // this closes @media 515px for <h4>
+
+      @media (max-width: 1000px) {
+        font-size: 0.9rem;
       }
-    }
+    } // this closes <h4>
 
     .teammate1-social-container {
       flex-direction: row;
       width: 100%;
       justify-content: center;
       margin: 0 auto;
-      padding: 5%;
+      // padding: 5%;
+      margin-top: 5%;
       text-align-last: justify;
 
       .github {
@@ -155,6 +185,18 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .github
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .github
+
+        @media (max-width: 515px) {
+          width: 38px;
+        } // this closes @media 515px for .github
       } // this closes .github for .teammate1-social-container
 
       .twitter {
@@ -165,6 +207,18 @@
         background-color: white;
         // margin: 0 10px;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .twitter
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .twitter
+
+        @media (max-width: 515px) {
+          width: 38px;
+        } // this closes @media 515px for .twitter
       } // this closes .twitter for .teammate1-social-container
 
       .email {
@@ -174,6 +228,18 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
+
+        @media (max-width: 515px) {
+          width: 38px;
+        } // this closes @media 515px for .email
       } // this closes .email for .teammate1-social-container
 
       @media (max-width: 515px) {
@@ -190,6 +256,10 @@
       margin-bottom: 8%;
       border-bottom: 1px solid snow;
     } // this closes @media for .teammate1-container
+
+    @media (max-width: 1000px) {
+      width: 13%;
+    } //this closes @media 1000px for teammate1-container
   } // this closes teammate1-container
 
   .teammate2-container {
@@ -231,6 +301,10 @@
       @media (max-width: 515px) {
         color: white;
       }
+
+      @media (max-width: 1000px) {
+        font-size: 1.3rem;
+      } // this closes @media 1000px for <h3>
     } // this closes h3 for teammate2
 
     h5 {
@@ -247,7 +321,10 @@
         margin: 3% 0;
         font-size: 2.5rem;
       }
-    }
+      @media (max-width: 1000px) {
+        font-size: 1.6rem;
+      } // this closes @media 1000px
+    } // this closes <h5> for teammate2
 
     h4 {
       padding-top: 4%;
@@ -261,6 +338,9 @@
       @media (max-width: 515px) {
         color: white;
       }
+      @media (max-width: 1000px) {
+        font-size: 0.9rem;
+      } // this closes @media 1000px
     }
 
     .teammate2-social-container {
@@ -268,7 +348,8 @@
       width: 100%;
       justify-content: center;
       margin: 0 auto;
-      padding: 5%;
+      margin-top: 5%;
+      // padding: 5%;
       text-align-last: justify;
 
       .github {
@@ -278,6 +359,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .github for .teammate2-social-container
 
       .twitter {
@@ -288,6 +377,14 @@
         background-color: white;
         // margin: 0 10px;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .twitter for .teammate2-social-container
 
       .email {
@@ -297,6 +394,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .email for .teammate2-social-container
       @media (max-width: 515px) {
         margin: 3% 0;
@@ -311,6 +416,10 @@
       margin-bottom: 8%;
       border-bottom: 1px solid snow;
     } // this closes @media for .teammate2-container
+
+    @media (max-width: 1000px) {
+      width: 13%;
+    } //this closes @media 1000px for teammate2-container
   } // this closes .teammate2-container
 
   .teammate3-container {
@@ -352,6 +461,10 @@
       @media (max-width: 515px) {
         color: white;
       }
+
+      @media (max-width: 1000px) {
+        font-size: 1.3rem;
+      } // this closes @media 1000px for <h3>
     } // this closes h3 for teammate2
 
     h5 {
@@ -368,6 +481,9 @@
         margin: 3% 0;
         font-size: 2.5rem;
       }
+      @media (max-width: 1000px) {
+        font-size: 1.6rem;
+      } // this closes @media 1000px
     }
 
     h4 {
@@ -382,6 +498,9 @@
       @media (max-width: 515px) {
         color: white;
       }
+      @media (max-width: 1000px) {
+        font-size: 0.9rem;
+      } // this closes @media 1000px
     }
 
     .teammate3-social-container {
@@ -389,7 +508,8 @@
       width: 100%;
       justify-content: center;
       margin: 0 auto;
-      padding: 5%;
+      margin-top: 5%;
+      // padding: 5%;
       text-align-last: justify;
 
       .github {
@@ -399,6 +519,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .github for .teammate2-social-container
 
       .twitter {
@@ -409,6 +537,14 @@
         background-color: white;
         // margin: 0 10px;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .twitter for .teammate2-social-container
 
       .email {
@@ -418,6 +554,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .email for .teammate3-social-container
       @media (max-width: 515px) {
         margin: 3% 0;
@@ -432,6 +576,10 @@
       margin-bottom: 5%;
       border-bottom: 1px solid snow;
     } // this closes @media for .teammate3-container
+
+    @media (max-width: 1000px) {
+      width: 13%;
+    } //this closes @media 1000px for teammate2-container
   } // this closes .teammate3-container
 
   .teammate4-container {
@@ -473,6 +621,10 @@
       @media (max-width: 515px) {
         color: white;
       }
+
+      @media (max-width: 1000px) {
+        font-size: 1.3rem;
+      } // this closes @media 1000px for <h3>
     } // this closes h3 for teammate2
 
     h5 {
@@ -489,6 +641,9 @@
         margin: 3% 0;
         font-size: 2.5rem;
       }
+      @media (max-width: 1000px) {
+        font-size: 1.6rem;
+      } // this closes @media 1000px
     }
 
     h4 {
@@ -503,6 +658,9 @@
       @media (max-width: 515px) {
         color: white;
       }
+      @media (max-width: 1000px) {
+        font-size: 0.9rem;
+      } // this closes @media 1000px
     }
 
     .teammate4-social-container {
@@ -510,7 +668,8 @@
       width: 100%;
       justify-content: center;
       margin: 0 auto;
-      padding: 5%;
+      margin-top: 5%;
+      // padding: 5%;
       text-align-last: justify;
 
       .github {
@@ -520,6 +679,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .github for .teammate4-social-container
 
       .twitter {
@@ -530,6 +697,14 @@
         background-color: white;
         // margin: 0 10px;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .twitter for .teammate4-social-container
 
       .email {
@@ -539,6 +714,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .email for .teammate4-social-container
       @media (max-width: 515px) {
         margin: 3% 0;
@@ -553,6 +736,10 @@
       margin-bottom: 5%;
       border-bottom: 1px solid snow;
     } // this closes @media for .teammate4-container
+
+    @media (max-width: 1000px) {
+      width: 13%;
+    } //this closes @media 1000px for teammate2-container
   } // this closes .teammate4-container
 
   @media (max-width: 515px) {
@@ -560,6 +747,10 @@
     flex-direction: column;
     justify-content: center;
   } // this closes @media for .overall-team-container
+  @media (max-width: 1000px) {
+    margin: 0 auto;
+    margin-top: 10%;
+  } // this closes @media 1000px for .overall-team-container
 } // this closes .overall-team-container
 
 //Chelsea Wetzel
@@ -611,6 +802,9 @@
       @media (max-width: 515px) {
         color: white;
       }
+      @media (max-width: 1000px) {
+        font-size: 1.3rem;
+      } // this closes @media 1000px for <h3>
     } // this closes h3 for teammate2
 
     h5 {
@@ -627,6 +821,9 @@
         margin: 3% 0;
         font-size: 2.5rem;
       }
+      @media (max-width: 1000px) {
+        font-size: 1.6rem;
+      } // this closes @media 1000px
     }
 
     h4 {
@@ -641,6 +838,9 @@
       @media (max-width: 515px) {
         color: white;
       }
+      @media (max-width: 1000px) {
+        font-size: 0.9rem;
+      } // this closes @media 1000px
     }
 
     .teammate6-social-container {
@@ -648,7 +848,8 @@
       width: 100%;
       justify-content: center;
       margin: 0 auto;
-      padding: 5%;
+      margin-top: 5%;
+      // padding: 5%;
       text-align-last: justify;
 
       .github {
@@ -658,6 +859,13 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .github for .teammate6-social-container
 
       .twitter {
@@ -668,6 +876,14 @@
         background-color: white;
         // margin: 0 10px;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .twitter for .teammate6-social-container
 
       .email {
@@ -677,6 +893,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .email for .teammate6-social-container
       @media (max-width: 515px) {
         margin: 3% 0;
@@ -690,7 +914,10 @@
       align-self: center;
       margin-bottom: 8%;
       border-bottom: 1px solid snow;
-    } // this closes @media for .teammate6-container
+    } // this closes @media 515px for .teammate6-container
+    @media (max-width: 1000px) {
+      width: 13%;
+    } //this closes @media 1000px
   } // this closes teammate6-container
 
   .teammate7-container {
@@ -732,6 +959,9 @@
       @media (max-width: 515px) {
         color: white;
       }
+      @media (max-width: 1000px) {
+        font-size: 1.3rem;
+      } // this closes @media 1000px for <h3>
     } // this closes h3 for teammate2
 
     h5 {
@@ -748,6 +978,9 @@
         margin: 3% 0;
         font-size: 2.5rem;
       }
+      @media (max-width: 1000px) {
+        font-size: 1.6rem;
+      } // this closes @media 1000px
     }
 
     h4 {
@@ -762,6 +995,9 @@
       @media (max-width: 515px) {
         color: white;
       }
+      @media (max-width: 1000px) {
+        font-size: 0.9rem;
+      } // this closes @media 1000px
     }
 
     .teammate7-social-container {
@@ -769,7 +1005,8 @@
       width: 100%;
       justify-content: center;
       margin: 0 auto;
-      padding: 5%;
+      margin-top: 5%;
+      // padding: 5%;
       text-align-last: justify;
 
       .github {
@@ -779,6 +1016,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .github for .teammate6-social-container
 
       .twitter {
@@ -789,6 +1034,14 @@
         background-color: white;
         // margin: 0 10px;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .twitter for .teammate6-social-container
 
       .email {
@@ -798,6 +1051,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .email for .teammate7-social-container
       @media (max-width: 515px) {
         margin: 3% 0;
@@ -812,6 +1073,9 @@
       margin-bottom: 8%;
       border-bottom: 1px solid snow;
     } // this closes @media for .teammate7-container
+    @media (max-width: 1000px) {
+      width: 13%;
+    } //this closes @media 1000px
   } // this closes teammate7-container
 
   .teammate5-container {
@@ -853,6 +1117,10 @@
       @media (max-width: 515px) {
         color: white;
       }
+
+      @media (max-width: 1000px) {
+        font-size: 1.3rem;
+      } // this closes @media 1000px for <h3>
     } // this closes h3 for teammate2
 
     h5 {
@@ -869,6 +1137,9 @@
         margin: 3% 0;
         font-size: 2.5rem;
       }
+      @media (max-width: 1000px) {
+        font-size: 1.6rem;
+      } // this closes @media 1000px
     }
 
     h4 {
@@ -883,6 +1154,9 @@
       @media (max-width: 515px) {
         color: white;
       }
+      @media (max-width: 1000px) {
+        font-size: 0.9rem;
+      } // this closes @media 1000px
     }
 
     .teammate5-social-container {
@@ -890,7 +1164,8 @@
       width: 100%;
       justify-content: center;
       margin: 0 auto;
-      padding: 5%;
+      margin-top: 5%;
+      // padding: 5%;
       text-align-last: justify;
 
       .github {
@@ -900,6 +1175,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .github for .teammate5-social-container
 
       .twitter {
@@ -910,6 +1193,14 @@
         background-color: white;
         // margin: 0 10px;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .twitter for .teammate5-social-container
 
       .email {
@@ -919,6 +1210,14 @@
         padding: 6px;
         background-color: white;
         margin: 0 auto;
+
+        @media (max-width: 1000px) {
+          width: 25px;
+        } // this closes @media 1000px for .email
+
+        @media (max-width: 1300px) {
+          width: 35px;
+        } // this closes @media 1300px for .email
       } // this closes .email for .teammate5-social-container
       @media (max-width: 515px) {
         margin: 3% 0;
@@ -933,10 +1232,20 @@
       margin-bottom: 8%;
       border-bottom: 1px solid snow;
     } // this closes @media for .teammate5-container
+    @media (max-width: 1000px) {
+      width: 13%;
+    } //this closes @media 1000px
   } // this closes teammate5-container
   @media (max-width: 515px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
   } // this closes @media for .new-container
+
+  @media (max-width: 1000px) {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
 } // closes .new-container

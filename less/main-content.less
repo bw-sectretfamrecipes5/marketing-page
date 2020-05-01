@@ -1,57 +1,4 @@
 // Main Content
-.spices {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("../assets/light-spices.jpg");
-
-  .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.75);
-    color: white;
-    display: flex;
-    // align-items: flex-center;
-    justify-content: center;
-    flex-direction: column;
-
-    h1 {
-      font-family: @decorFont;
-      max-width: 100%;
-      margin: 0 5%;
-      margin-top: 9%;
-      font-size: 4.5rem;
-      //   font-weight: ;
-      line-height: 0.9;
-      //   justify-content: center;
-      text-align: center;
-      padding-bottom: 60px;
-      //   margin-bottom: 80px;
-      //   margin-bottom: 30%;
-      //   align-items: flex-start;
-    } // this closes h1
-
-    p {
-      font-family: @pFont;
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-      line-height: 0.9;
-      color: white;
-      text-align: center;
-      margin: 0 20%;
-      padding: 20px;
-      margin-bottom: 53px;
-      padding-bottom: 135px;
-      //   margin-bottom: 30%;
-      //   margin-top: 15%;
-    } // this closes p
-  } // this closes overlay
-} // this closes spices
 
 .white-space {
   height: 100vh;
@@ -79,7 +26,16 @@
       line-height: 1.3;
       text-align: center;
       padding-bottom: 15px;
-    }
+    } // this closes @media 515pxfor <h1>
+
+    @media (max-width: 1300px) {
+      font-size: 4.1rem;
+      line-height: 1.6;
+    } // this closes @media 1300px
+
+    @media (max-width: 1000px) {
+      font-size: 3.6rem;
+    } // this closes @media 1000px for <h1>
   } // this closes h1
 
   p {
@@ -99,13 +55,35 @@
       letter-spacing: 1px;
       line-height: 1.6;
       margin: 0 auto;
-    }
+    } // this closes @media 515px for <p>
+
+    @media (max-width: 1300px) {
+      font-size: 1.7rem;
+      margin: 0 auto;
+      line-height: 1.5;
+    } // this closes @media 1300px for <p>
+
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
+      margin: 0 auto;
+      line-height: 1.3;
+    } // this closes @media 1000px for <p>
   } // this closes p
 
   @media (max-width: 515px) {
     height: 100vh;
-    width: 100vw;
-  } // @media for .white-space
+    width: 100%;
+  } // @media 515px for .white-space
+
+  @media (max-width: 1300px) {
+    height: 100vh;
+    width: 100%;
+  } // this closes @media 1300px for .white-space
+
+  @media (max-width: 1000px) {
+    height: 100vh;
+    width: 100%;
+  } // this closes @media 1000px for .white-space
 } // this closes white-space
 
 .infoBreakdown {
@@ -119,7 +97,7 @@
   // display: flex;
 
   h1 {
-    padding-top: 5%;
+    padding-top: 15%;
     font-family: @decorFont;
     font-size: 5.7rem;
     line-height: 0.9;
@@ -135,6 +113,15 @@
       padding-bottom: 15px;
       padding-top: 10%;
     } // this closes @media for <h1>
+
+    @media (max-width: 1300px) {
+      font-size: 4.1rem;
+      line-height: 1.6;
+    } // this closes @media 1300px
+
+    @media (max-width: 1000px) {
+      font-size: 3.2rem;
+    } // this closes @media 1000px for <h1>
   } // this closes <h1>
 
   p {
@@ -154,11 +141,29 @@
       letter-spacing: 1px;
       line-height: 1.4;
       margin: 0 auto;
-    } // this closes @media for <p>
+    } // this closes @media 515 for <p>
+
+    @media (max-width: 1300px) {
+      font-size: 1.7rem;
+      margin: 0 auto;
+      line-height: 1.5;
+    } // this closes @media 1300px for <p>
+
+    @media (max-width: 1000px) {
+      padding-top: 10%;
+      font-size: 1.3rem;
+      margin: 0 auto;
+      line-height: 1.3;
+    } // this closes @media 1000px for <p>
   } // this closes <p>
 
   @media (max-width: 515px) {
     height: 100vh;
-    width: 100vw;
-  } // @media for .infoBreakdown
+    width: 100%;
+  } // @media 515px for .infoBreakdown
+
+  @media (max-width: 1300px) {
+    height: 100vh;
+    width: 100%;
+  }
 } // this closes .infoBreakdown
